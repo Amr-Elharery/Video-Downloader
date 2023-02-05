@@ -87,6 +87,7 @@ while True:
         ctext("Please Choose Quality From List Above ⬆", "red")
 
 # Choose A Quality
+
 for video in getStreams(youTube):
     if video.resolution == res:
         chosenVideo = video
@@ -103,7 +104,7 @@ ctext("=" * 70, "blue", "black")
 down = input("Are you sure to download? 'Y / N' ").upper()
 if down == 'Y':
     try:
-        chosenVideo.download()
+        youTube.streams.get_by_resolution(res).download()
         ctext("Downloaded successfully😃", "green")
         ctext("Thanks use Downloader❤", "white", "blue")
     except:
