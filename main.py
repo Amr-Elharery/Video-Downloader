@@ -46,7 +46,6 @@ def on_progress(vid, chunk, bytes_remaining):
 # Title--
 myTitle = text2art("Elharery\nVideo Downloader")
 
-print(myTitle)
 ctext(myTitle, "red", "black")
 ctext("=" * 70, "blue", "black")
 ctext("Made By Amr -Elharery | https://amr-elharery.github.io/Elharery-Page/", "white", "red")
